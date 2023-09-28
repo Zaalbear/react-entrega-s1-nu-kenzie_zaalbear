@@ -1,0 +1,55 @@
+.form__container {
+    border: 2px solid var(--gray-2);
+
+    width: 80%;
+    padding: 2.5rem 1rem;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .input__container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+       .input__label{
+        font-size: 1rem;
+        color: var(--gray-4);
+
+       }
+
+       .example__text{
+        font-size: 12px;
+        color: var(--gray-3);
+       }
+
+       .input__box{
+        border: none;
+        padding: 0.5rem;
+        background-color: var(--gray-2);
+
+        color: var(--gray-3);
+
+        &:focus {
+            color: var(--gray-4);
+        }
+
+       }
+    }
+
+    .form__bttn{
+        border: none;
+        border-radius: 5px;
+
+        padding: 0.5rem;
+
+        background-color: var(--color-primary-1);
+        color: var(--gray-1);
+
+        &:hover{
+            background-color: var(--color-primary-2);
+        }
+    }
+}

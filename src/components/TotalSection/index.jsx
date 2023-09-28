@@ -1,3 +1,5 @@
+import styles from './style.module.scss'
+
 export const TotalSection = ({ entryList }) => {
   let total = 0;
 
@@ -12,17 +14,17 @@ export const TotalSection = ({ entryList }) => {
   }, 0);
 
   return (
-    <section>
-      <h2>
+    <section className={styles.total__container}>
+      <h2 className={styles.total__title}>
         Valor total:{" "}
-        <span>
+        <span className={styles.total__value}>
           {total.toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL",
           })}
         </span>
       </h2>
-      <p>O valor se refere ao saldo</p>
+      <p className={styles.total__text}>O valor se refere ao saldo</p>
     </section>
   );
 };

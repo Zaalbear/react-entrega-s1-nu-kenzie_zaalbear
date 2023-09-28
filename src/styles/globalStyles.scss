@@ -1,0 +1,26 @@
+:root {
+    //colors
+    --color-primary-1: #FD377E;
+    --color-primary-2: #e34981;
+    --color-secondary: #03B898;
+
+    --gray-1: #F8F9FA;
+    --gray-2: #E9ECEF;
+    --gray-3: #868E96;
+    --gray-4: #212529;
+
+    //fonts
+    --font-primary: 'Nunito', sans-serif;
+}
+
+body, #root, .main__container, .form__container{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    font-family: var(--font-primary);
+}

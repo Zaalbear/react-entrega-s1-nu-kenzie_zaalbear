@@ -1,3 +1,5 @@
+import "../../styles/globalStyles.scss"
+
 export const Main = ({ children }) => {
-  return <main>{children}</main>;
+  return <main className="main__container">{children}</main>;
 };

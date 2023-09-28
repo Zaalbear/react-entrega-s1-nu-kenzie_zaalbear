@@ -35,8 +35,10 @@ export const HomePage = () => {
     <>
       <Header />
       <Main>
-        <FinanceForm addEntry={addEntry} />
-        <TotalSection entryList={entryList} />
+        <div className="form__container">
+          <FinanceForm addEntry={addEntry} />
+          <TotalSection entryList={entryList} />
+        </div>
         <FinanceSection entryList={entryList} deleteEntry={deleteEntry} />
       </Main>
     </>
