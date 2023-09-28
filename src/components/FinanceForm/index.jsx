@@ -3,7 +3,7 @@ import styles from './style.module.scss'
 
 export const FinanceForm = ({ addEntry }) => {
   const [entryName, setEntryName] = useState("");
-  const [entryValue, setEntryValue] = useState(0);
+  const [entryValue, setEntryValue] = useState("");
   const [entryType, setEntryType] = useState("Entrada");
 
   const submit = (event) => {
@@ -12,7 +12,7 @@ export const FinanceForm = ({ addEntry }) => {
     addEntry(entryName, entryValue, entryType);
 
     setEntryName("");
-    setEntryValue(0);
+    setEntryValue("");
     setEntryType("Entrada");
   };
 
