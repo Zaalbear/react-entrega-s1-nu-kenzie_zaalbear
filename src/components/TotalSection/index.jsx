@@ -13,8 +13,10 @@ export const TotalSection = ({ entryList }) => {
     return total;
   }, 0);
 
+  console.log(entryList)
+
   return (
-    <section className={styles.total__container}>
+    <section className={entryList.length === 0 ? styles.hidetotal__container : styles.total__container}>
       <h2 className={styles.total__title}>
         Valor total:{" "}
         <span className={styles.total__value}>

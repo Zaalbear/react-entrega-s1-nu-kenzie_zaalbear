@@ -52,4 +52,18 @@
             background-color: var(--color-primary-2);
         }
     }
+
+    @media (min-width: 1024px){
+        width: 100%;
+        padding: 1rem 0;
+
+        .input__container{
+            padding: 1rem;
+
+        }
+
+        .form__bttn{
+            margin: 1rem;
+        }
+    }
 }
