@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from './style.module.scss'
+import styles from "./style.module.scss";
 
 export const FinanceForm = ({ addEntry }) => {
   const [entryName, setEntryName] = useState("");
@@ -19,7 +19,9 @@ export const FinanceForm = ({ addEntry }) => {
   return (
     <form className={styles.form__container} onSubmit={submit}>
       <div className={styles.input__container}>
-        <label className={styles.input__label} htmlFor="name">Descrição</label>
+        <label className={styles.input__label} htmlFor="name">
+          Descrição
+        </label>
         <input
           className={styles.input__box}
           placeholder="Digite aqui uma descrição"
@@ -33,7 +35,9 @@ export const FinanceForm = ({ addEntry }) => {
       </div>
 
       <div className={styles.input__container}>
-        <label className={styles.input__label} htmlFor="value">Valor (R$:)</label>
+        <label className={styles.input__label} htmlFor="value">
+          Valor (R$:)
+        </label>
         <input
           className={styles.input__box}
           placeholder="R$ 10,00"
@@ -45,7 +49,9 @@ export const FinanceForm = ({ addEntry }) => {
       </div>
 
       <div className={styles.input__container}>
-        <label className={styles.input__label} htmlFor="type">Tipo de valor</label>
+        <label className={styles.input__label} htmlFor="type">
+          Tipo de valor
+        </label>
         <select
           className={styles.input__box}
           name="type"
@@ -58,7 +64,9 @@ export const FinanceForm = ({ addEntry }) => {
         </select>
       </div>
 
-      <button className={styles.form__bttn} type="submit">Inserir Valor</button>
+      <button className={styles.form__bttn} type="submit">
+        Inserir Valor
+      </button>
     </form>
   );
 };

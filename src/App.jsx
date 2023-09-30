@@ -1,5 +1,5 @@
-import "./styles/reset.scss"
-import "./styles/globalStyles.scss"
+import "./styles/reset.scss";
+import "./styles/globalStyles.scss";
 
 import { HomePage } from "./pages/HomePage";
 
