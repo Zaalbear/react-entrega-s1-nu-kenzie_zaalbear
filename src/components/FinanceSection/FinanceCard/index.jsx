@@ -30,7 +30,7 @@ export const FinanceCard = ({ entryList, deleteEntry }) => {
                   </p>
                 ) : (
                   <p className={styles.item__value}>
-                    R$: -{entry.value.toFixed(2).replace(".", ",")}
+                    R$: {entry.value.toFixed(2).replace(".", ",")}
                   </p>
                 )}
 

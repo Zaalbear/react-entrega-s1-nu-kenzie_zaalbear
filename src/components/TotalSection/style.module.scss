@@ -2,7 +2,7 @@
   width: 80%;
   padding: 1.5rem 1rem;
 
-  border: 1px solid var(--gray-2);
+  border: 2px solid var(--gray-2);
   border-radius: 3px;
 
   display: flex;
@@ -18,15 +18,33 @@
     font-size: 1rem;
     font-weight: 700;
 
+    @media (min-width: 1024px){
+      margin: 0 1rem;
+    }
+
     .total__value {
       color: var(--color-primary-1);
+
+      
     }
   }
 
   .total__text {
     font-size: 1rem;
     color: var(--gray-3);
+
+    @media (min-width: 1024px){
+      margin: 0 1rem;
+    }
   }
+
+  @media (min-width: 1024px){
+    width: 100%;
+
+    padding: 1.5rem 0;
+    
+  }
+
 }
 
 .hidetotal__container {
